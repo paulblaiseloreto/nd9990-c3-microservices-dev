@@ -12,7 +12,7 @@ const c = config;
 
 (async () => {
   await sequelize.addModels(V0MODELS);
-  await sequelize.sync();
+  //await sequelize.sync();
 
   const app = express();
   const port = process.env.PORT || 8080;
